@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import FontContainer from './components/FontContainer';
-import FontStore from './store/FontStore';
+import Store from './store/store';
 
 function App() {
   return (
-    <FontStore>
+    <Store>
       <FontContainer />
-    </FontStore>
+    </Store>
   );
 }
 

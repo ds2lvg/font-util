@@ -1,18 +1,18 @@
 import React, { useRef, useContext } from 'react';
-import { FontContext, CHANGE_INPUT } from '../store/FontStore';
+import { FontContext, CHANGE_INPUT } from '../store/store';
 
-const FontInput = ({label}) => {
+const FontInput = ({target, label, type}) => {
   const ref = useRef();
   const { dispatch } = useContext(FontContext);
 
   const handleChange = () => {
-    dispatch({type: CHANGE_INPUT, payload: ref.current.value});
+    dispatch({type: CHANGE_INPUT, target: target, payload: ref.current.value});
   }
 
   return (
     <li>
       <label htmlFor="">{label}</label>
-      <input type="text" onChange={handleChange} ref={ref} />
+      <input type={type} onChange={handleChange} ref={ref} />
     </li>
   );
 };
