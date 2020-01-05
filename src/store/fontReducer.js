@@ -1,10 +1,9 @@
-import { CHANGE_INPUT, RESET_INPUT } from './store';
+import { CHANGE_INPUT, RESET_INPUT, initialState } from './store';
 
 export const fontReducer = (fontstate, {type, target, payload}) => {
   switch (type) {
     case CHANGE_INPUT:
-      console.log(fontstate);
-      console.log(target, payload);
+      // console.log(target, payload);
       if(target) {
         return {...fontstate, [target]: payload}
       } else{
@@ -12,7 +11,8 @@ export const fontReducer = (fontstate, {type, target, payload}) => {
       }
 
     case RESET_INPUT:
-      return payload;
+      // console.log("RESET_INPUT", fontstate)
+      return initialState;
 
     default:
       return;
