@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css);
+@import url(https://cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css);
+@import url(https://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 400;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 700;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 300;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+.serif * {
+ font-family: sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nanumbarungothic * {
+ font-family: 'NanumBarunGothic', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.notosanskr * {
+font-family: 'Noto Sans KR', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.spoqahansans * {
+ font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; 
 }
+.nanumsquare * { 
+ font-family: 'NanumSquare', sans-serif; 
+}
+.nanumsquareround * {
+ font-family: 'NanumSquareRound',sans-serif;
+}
+.kopubdotum * {
+ font-family: 'KoPub Dotum',sans-serif;
+}
+.kopubbatang * {
+ font-family: 'KoPub Batang',sans-serif;
+}
+
+/**/
+.btnReset{width: 100px; height: 20px;}
+.fontSize{width: 40px; margin-right: 10px;}
+.fontWeight{width: 30px;}
+.textContent{max-width: 400px; width: 90%;}
+address{text-align: right;}
