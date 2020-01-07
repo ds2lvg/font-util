@@ -15,7 +15,7 @@ const FontList = ({textContent}) => {
       return (
         <ul key={familyEN} className={"font-list "+familyEN} style={styling}>
           <li>안녕하세요 {familyKR}입니다</li>
-          <li>hello {familyEN}</li>
+          <li className="italic">hello {familyEN}</li>
           <li>{fonts.content}</li>
         </ul>
       );

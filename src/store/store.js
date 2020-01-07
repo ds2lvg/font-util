@@ -18,8 +18,8 @@ export const fontNames = [
 ];
 
 export const initialState = {
-  size: 14,
-  weight: 1,
+  size: 18,
+  weight: 4,
   content: "입력하신 텍스트 내용이 보입니다.",
 };
 

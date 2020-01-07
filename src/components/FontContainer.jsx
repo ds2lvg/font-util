@@ -5,9 +5,13 @@ import FontList from './FontList';
 const FontContainer = () => {
   return (
     <>
-      <h1>Font Customizing</h1>
-      <FontForm />
-      <FontList />
+      <h1 className="web_title">Font Customizing</h1>
+      <header>
+        <FontForm />
+      </header>
+      <div className="container">
+        <FontList />
+      </div>
       <address>
         jongmin Kim A.K.A Reinkaos<br />
         ds2lvg@gmail.com<br />
