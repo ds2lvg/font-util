@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import "/resource/NanumBarunGothic/fonts.scss";
+@import "./resource/NanumGothic/fonts.scss";
+@import "./resource/NanumSquare/fonts.scss";
+@import "./resource/NanumSquareRound/fonts.scss";
+@import "./resource/NotoSans/fonts.scss";
+@import "./resource/SpoqaHanSans/fonts.scss";
+
+@import url(https://cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css);
+@import url(https://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+
+.serif * {
+  font-family: sans-serif;
+}
+.nanumbarungothic * {
+  font-family: 'NanumBarunGothic', sans-serif;
+}
+.notosanskr * {
+  font-family: 'NotoSans', sans-serif;
+}
+.spoqahansans * {
+  font-family: 'SpoqaHanSans', 'sans-serif'; 
+}
+.nanumsquare * { 
+ font-family: 'NanumSquare', sans-serif; 
+}
+.nanumsquareround * {
+ font-family: 'NanumSquareRound',sans-serif;
+}
+.kopubdotum * {
+ font-family: 'KoPub Dotum',sans-serif;
+}
+.kopubbatang * {
+ font-family: 'KoPub Batang',sans-serif;
+}

@@ -1,23 +1,24 @@
 import React, { useEffect, useRef } from 'react';
-import './App.css';
+import './App.scss';
+import './fontContainer.scss';
 import FontContainer from './components/FontContainer';
 import Store from './store/store';
 // import logo from './resource/images/dbt.jpg';
 
 function App() {
-  const mountRef = useRef(true);
-  const ref = useRef();
+  const spinnerRef = useRef();
   useEffect(() => {
     setTimeout(() =>{
-      console.log("dom loaded", ref.current);
-      ref.current.style.display="none";
+      console.log("dom loaded", spinnerRef.current);
+      spinnerRef.current.style.display="none";
+      document.querySelector('body').style.position="static";
     },1000)
   }, []);
 
   return (
     <Store>
       <FontContainer />
-      <div className="spinner" ref={ref}>
+      <div className="spinner" ref={spinnerRef}>
         <svg
           className="loading"
           version="1.1"
@@ -28,7 +29,7 @@ function App() {
           width="720px"
           height="190px"
           viewBox="0 0 574.558 120"
-          enable-background="new 0 0 574.558 120"
+          enableBackground="new 0 0 574.558 120"
           xmlSpace="preserve"
         >
           <defs>
@@ -47,7 +48,7 @@ function App() {
             <text
               id="text"
               transform="matrix(1 0 0 1 -8.0684 116.7852)"
-              font-size="120"
+              fontSize="120"
             >
               LOADING
             </text>

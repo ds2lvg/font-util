@@ -4,7 +4,7 @@ html, body {
   width:100%; height:100%; -webkit-overflow-scrolling: touch; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; }
 html{overflow-y:scroll;}
 body{font-family: 'Noto Sans KR', sans-serif; font-size: 14px; word-break:break-all;-ms-word-break:break-all; }
-a, address, blockquote, br, fieldset, legend, label, form, input, select, textarea, button, table, th, td caption, cite, code, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, div, iframe, ul, ol, li, hr, img{margin:0; padding:0;}
+html, body, a, address, blockquote, br, fieldset, legend, label, form, input, select, textarea, button, table, th, td caption, cite, code, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, div, iframe, ul, ol, li, hr, img{margin:0; padding:0;}
 h1, h2, h3, h4, h5, h6 {font-size:14px; text-align:left;}
 ul, ol, li {list-style:none;}
 abbr,acronym {border:0;}
