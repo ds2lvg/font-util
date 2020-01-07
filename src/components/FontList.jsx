@@ -7,6 +7,7 @@ const FontList = ({textContent}) => {
   const styling = {
     fontSize: fonts.size+"px",
     fontWeight: fonts.weight*100,
+    color: fonts.colorCode,
   }
   return (
     fontNames.map((v,i) => {

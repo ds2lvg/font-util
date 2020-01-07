@@ -17,6 +17,7 @@ const FontForm = memo(() => {
       <ul className="input_wrap">
         <FontInput target="size" type="number" label="size(px)" placeholder={fonts.size} />
         <FontInput target="weight" type="number" label="weight(1~9)" placeholder={fonts.weight} />
+        <FontInput target="colorCode" type="color" label="color(#)" placeholder={fonts.colorCode} />
         <FontInput target="content" type="text" label="content" placeholder="입력하신 텍스트 내용이 보입니다." />
         <li><button className="btn_reset">입력창 초기화</button></li>
       </ul>

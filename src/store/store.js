@@ -21,6 +21,7 @@ export const initialState = {
   size: 18,
   weight: 4,
   content: "입력하신 텍스트 내용이 보입니다.",
+  colorCode: "#000000",
 };
 
 const Store = (props) => {
