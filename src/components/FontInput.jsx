@@ -12,7 +12,7 @@ const FontInput = memo(({target, label, type, placeholder}) => {
   return (
     <li>
       <label htmlFor="">{label}</label>
-      <input type={type} onChange={handleChange} ref={ref} placeholder={placeholder} />
+      <input type={type} className={"ipt_"+type} onChange={handleChange} ref={ref} placeholder={placeholder} />
     </li>
   );
 });

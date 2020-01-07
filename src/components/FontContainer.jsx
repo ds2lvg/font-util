@@ -5,8 +5,8 @@ import FontList from './FontList';
 const FontContainer = () => {
   return (
     <>
-      <h1 className="web_title">Font Customizing</h1>
       <header>
+        <h1 className="web_title">Font Customizing</h1>
         <FontForm />
       </header>
       <div className="container">
@@ -14,7 +14,7 @@ const FontContainer = () => {
       </div>
       <address>
         jongmin Kim A.K.A Reinkaos<br />
-        ds2lvg@gmail.com<br />
+        <a href="mailto:ds2lvg@gmail.com">ds2lvg@gmail.com</a>
       </address>
     </>
   );

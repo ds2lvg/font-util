@@ -12,7 +12,7 @@ function App() {
       console.log("dom loaded", spinnerRef.current);
       spinnerRef.current.style.display="none";
       document.querySelector('body').style.position="static";
-    },1000)
+    },1800)
   }, []);
 
   return (
