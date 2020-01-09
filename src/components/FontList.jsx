@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { fontNames, FontContext } from '../store/store';
+import { FontContext } from '../store/store';
 
 const FontList = ({textContent}) => {
   const {fonts} = useContext(FontContext);
@@ -10,7 +10,7 @@ const FontList = ({textContent}) => {
     color: fonts.colorCode,
   }
   return (
-    fontNames.map((v,i) => {
+    fonts.usingfontNames.map((v,i) => {
       const familyEN = Object.keys(v)[0];
       const familyKR = v[familyEN];
       return (

@@ -5,6 +5,7 @@ export const FontContext = createContext();
 
 export const CHANGE_INPUT = "CHANGE_INPUT";
 export const RESET_INPUT = "RESET_INPUT";
+export const CHANGE_CHECKBOX = "CHANGE_CHECKBOX";
 
 export const fontNames = [
   {"notosanskr": "노토산스"},
@@ -22,6 +23,7 @@ export const initialState = {
   weight: 4,
   content: "입력하신 텍스트 내용이 보입니다.",
   colorCode: "#000000",
+  usingfontNames: fontNames,
 };
 
 const Store = (props) => {
