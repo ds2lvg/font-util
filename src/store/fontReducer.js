@@ -1,6 +1,6 @@
-import { initialState, CHANGE_INPUT, RESET_INPUT, CHANGE_CHECKBOX, } from './store';
+import { initialState, CHANGE_INPUT, RESET_INPUT, CHANGE_CHECKBOX, RESET_CHECKBOX, } from './store';
 
-export const fontReducer = (fontstate=initialState, {type, target, payload}) => {
+export const fontReducer = (fontstate=initialState, {type, target, payload, allCheck}) => {
   switch (type) {
     case CHANGE_INPUT:
       // console.log(target, payload);
@@ -13,6 +13,20 @@ export const fontReducer = (fontstate=initialState, {type, target, payload}) => 
     case RESET_INPUT:
       // console.log("RESET_INPUT", fontstate)
       return initialState;
+
+    case RESET_CHECKBOX:
+      console.log("RESET_CHECKBOX", fontstate)
+      if(allCheck){
+        return {
+          ...fontstate,
+          [target]: [],
+        };
+      } else {
+        return {
+          ...fontstate,
+          [target]: initialState.usingfontNames,
+        }
+      }
 
     case CHANGE_CHECKBOX:
       const fontEN = payload[0][0];

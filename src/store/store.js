@@ -6,6 +6,7 @@ export const FontContext = createContext();
 export const CHANGE_INPUT = "CHANGE_INPUT";
 export const RESET_INPUT = "RESET_INPUT";
 export const CHANGE_CHECKBOX = "CHANGE_CHECKBOX";
+export const RESET_CHECKBOX = "RESET_CHECKBOX";
 
 export const fontNames = [
   {"notosanskr": "노토산스"},
