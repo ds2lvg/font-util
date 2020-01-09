@@ -28,13 +28,16 @@ const FontForm = memo(() => {
     <>
     <div className="checkFontBox">
       <form onSubmit={resetCheck} ref={checkFormRef}>
+        <div className="btn_checked_wrap">
+          <button className="btn_checked">{!allCheck? '☑ 모두 체크' : '☐ 모두 체크 해제'}</button>
+        </div>
         <ul>
           {fontNames.map((v, i)=> {
             let k = Object.keys(v);
             return <FontCheckbox target="usingfontNames" label={v[k]} enKey={k} idx={i} allCheck={allCheck} key={k+i} />
           })}
         </ul>
-        <button className="btn_reset">{!allCheck? '모두 체크' : '모두 체크 해제'}</button>
+
       </form>
     </div>
     <form onSubmit={handleSubmit} ref={formRef}>
